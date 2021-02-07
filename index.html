@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="variables.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/6788fdcc85.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Search</title>
+    </head>
+
+    <body>
+        <!-- Creating links to pages, "Image Search" & "Advanced Search" in the upper right part of page -->
+        <div class="headerCont">
+            <div class="links">
+                <a href="imageSearch.html">Image Search</a>
+            </div>
+            <div class="links">
+                <a href="advancedSearch.html">Advanced Search</a>
+            </div>      
+        </div>
+        <!-- Implementing Google Logo Image -->
+        <div class="mainCont">
+            <img src="googLogo.png" alt="First Google Logo">
+        </div>
+        <!-- Implementing Google Search form with "Google Search" & "I'm Feeling Lucky" buttons -->
+        <form class="formStyled" action="https://google.com/search" autocomplete="off">
+            <div>
+                <input type="text" class="inputField" maxlength="2048" name="q">
+                <i class="fas fa-search googSearch" aria-hidden="true"></i>
+                <div class="tooltip tp">
+                    <i class="fas fa-microphone fa-lg googMic microphoneImage" style="line-height: .75em; vertical-align: -.0667em;" aria-hidden="true">
+                        <span class="tooltiptext">Search by voice</span></i>
+                </div>
+            
+            <div class="btnCont">
+                <input type="submit" class="searchBtn" value="Google Search">
+                <input type="submit" class="searchBtn" value="I'm Feeling Lucky" name="btnI">
+            </div>
+            </div>
+            
+        </form>
+        <!-- Creating a footer of the page -->
+        <footer class="footer">
+            <span class="footerStart">
+                <a href >Advertising</a>
+                <a href>Business</a>
+                <a href>About</a>
+                <a href>How Search Works</a>
+            </span>
+            <span class="footerEnd">
+                <a href>Privacy</a>
+                <a href>Terms</a>
+                <a href>Settings</a>
+            </span>
+        </footer>
+    </body>
+</html>
+
+
+

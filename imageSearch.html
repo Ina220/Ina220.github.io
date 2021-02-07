@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="variables.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/6788fdcc85.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        
+        <title>Image Search</title>
+    </head>
+
+    <body>
+        <!-- Creating "Google Search" link to page in the upper right corner"-->
+        <div class="headerCont">
+            <div class="links">
+                <a href="index.html">Google Search</a>
+            </div>      
+        </div>
+        <!-- Implementing Google Logo Image --> 
+        <div class="mainCont">
+            <img src="googLogo.png" alt="Google Logo " class="logoTop"><span class="imgSpan">images</span>
+        </div>
+        <!-- Implementing Google Image Search form -->
+        <form class="formStyled" action="http://images.google.com/images" autocomplete="off">
+            <div>
+                <input type="text" class="inputField" maxlength="2048" name="q">
+                <input type="hidden" name="oq">
+                <i class="fas fa-search imgSearch" aria-hidden="true"></i>
+                <div class="tooltip cameraTp">
+                    <i class="fas fa-camera fa-lg" aria-hidden="true"><span class="tooltiptext">Search by image</span></i>
+                </div>
+                <div class="tooltip tp">
+                    <i class="fas fa-microphone fa-lg imgMic" aria-hidden="true"><span class="tooltiptext">Search by voice</span></i>
+                </div>
+                <button type="submit" class="imgBtn">
+                    <i class="fas fa-search  fa-lg" id="search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Creating a footer of the page -->
+        <footer class="footer">
+            <span class="footerStart">
+                <a href >Advertising</a>
+                <a href>Business</a>
+                <a href>About</a>
+                <a href>How Search Works</a>
+            </span>
+            <span class="footerEnd">
+                <a href>Privacy</a>
+                <a href>Terms</a>
+                <a href>Settings</a>
+            </span>
+        </footer>
+    </body>
+</html>
+
+
+

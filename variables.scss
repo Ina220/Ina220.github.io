@@ -1,0 +1,501 @@
+$color: #202124;
+$fontStack: arial,sans-serif;
+$fontSize: 16px;
+$iconTop: 16%;
+
+
+body {
+    display: block;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color;
+    text-align: left;
+    background-color: #fff;
+    }
+* {
+    font-family: arial;
+}
+*, ::after, ::before {
+        box-sizing: border-box;
+}
+
+ /* "Google Search" and "Image Search" page styling */    
+.headerCont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    font-size: $fontSize; 
+    font-family: $fontStack; 
+    color: $color;
+    margin-bottom: 0.4%;
+}
+
+/* Google Logo for the Google Search page */
+img {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    width: 272px;
+    transition-property: padding-top, width, height;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.4s, 0.4s, 0.4s;
+    transition: padding-top 0.4s ease, width 0.4s ease, height 0.4s ease;
+    transition-timing-function: ease, ease, ease;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Google Logo for the Image Search page */
+.mainCont {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logoTop {
+    padding-top: 100px;
+}
+
+.imgSpan {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, $fontStack;
+    left: -55px;
+    position: relative;
+    top: 80px;
+    white-space: nowrap;
+}
+
+/* Google Logo for the Advanced Search page */
+.cornerLogo {
+    margin-left: 1.2%;
+    margin-top: 1.2%;
+    padding-bottom: 1%;
+}
+
+.imgCorner {
+    width: 110px;
+    display: inline-block;
+    line-height: 0;
+    outline: none;
+    vertical-align: middle;
+    position: relative;
+    top: -30px;
+}
+
+/* Google Search, Image Search and Advanced Search links in the top right*/
+div {
+    .links {
+        display: inline-block;
+        padding-right: 15px;
+        font-family: $fontStack;
+    }
+    a {
+        color: $color;
+        text-decoration: none;  
+    }
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: $color;
+    }
+}
+
+/* Advance Search page, Google Search link styling*/
+.rightSearch {
+    text-decoration: none;
+    margin-right: 1.2%;
+    color: $color;
+    justify-content: flex-end;
+    font-family: $fontStack;
+    font-size: $fontSize;
+}
+
+/* "Google Search" and "Image Search" page class for styling the form */
+.formStyled {
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    display: block;
+    max-width: 670px;
+    position: relative;
+}
+
+/* input[type="text] */
+.inputField {
+    padding: 0px 8px 0 35px;
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 50px;
+    color: #222;
+    font-size: $fontSize;
+    font-family: $fontStack;
+    line-height: 35px;
+    position: relative;
+    user-select: none;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* "Google Search" and "I'm Feeling Lucky" buttons */
+.btnCont {
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    z-index: 0;
+}
+
+.searchBtn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: $fontStack;
+    font-size: $fontSize;
+    margin: 25px 8px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+    &:hover {
+        border: 2px solid #dfe1e5;
+    }
+}
+
+/* "Search" icon in input field in Image Search page*/
+%fa-search {
+    position: absolute;
+    z-index: 3;
+    width: 10px;
+    height: 10px;
+}
+
+.googSearch {
+    @extend %fa-search;
+    top: $iconTop;
+    color: #9c9ea1;
+    right: 91%;
+}
+
+.imgSearch {
+    @extend %fa-search;
+    top: $iconTop;
+    color: #9c9ea1;
+    right: 91%;
+}
+
+#search {
+    position: relative;
+    color: #4285f4;
+    top: 0;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.imgBtn {
+    position: absolute;
+    right: 60px;
+    top: $iconTop;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+}
+
+/* "Search" blue icon in input field in Image Search page */
+.blueSearch {
+    @extend %fa-search;
+    color: #4285f4;
+    position: absolute;
+    top: $iconTop;
+    left: 88%;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* "Microphone" icon in input field in Image Search page */
+div {
+    .tp {
+        top: -37px;
+    }
+}
+
+%fa-microphone {
+    position: relative;
+    z-index: 3;
+    width: 13px;
+    height: 13px;
+    
+    color: #4d90fe;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.googMic {
+    @extend %fa-microphone;
+    top: $iconTop;
+    left: 270px;
+    line-height: .75em;
+    vertical-align: -.0667em;
+}
+
+.imgMic {
+    @extend %fa-microphone;
+    top: $iconTop;
+    left: 210px;
+}
+
+/* "Camera" icon in input field in Image Search page */
+div {
+    .cameraTp {
+        top: -50px;
+    }
+}
+.fa-camera {
+    position: absolute;
+    top: $iconTop;
+    z-index: 3;
+    left: 160px;
+    width: 24px;
+    height: 10px;
+    color: #808285;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+.fa-lg {
+    font-size: 1.33333em;
+    line-height: .75em;
+    vertical-align: -.0667em;
+}
+
+/* "Advance Search" page upper page with Header styling */
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    font-size: 13px;
+    font-family: $fontStack;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 0.4%;
+    background-color:#f1f1f1;
+}
+
+.advanceHeader {
+    color: #d93025;
+    font-size: 24px;
+    margin: 25px 35px;
+    
+    label {
+        margin-left: 10px
+    }
+}
+
+/* Upper line in "Advance Search" page */
+.advanceLine {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.advanceFormCont {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;  
+}
+
+.titleFind {
+    font-size: 20px;
+    float: left;
+    min-width: 167px;
+    color: $color;
+    margin-left: 40px;
+}
+
+.emptySpace { 
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+.formLeftMar { // form's left margin 
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+/* Advance Search page styling */
+#grid {
+    display: grid;
+    grid-template-columns: 200px 500px auto;
+    grid-template-rows: 40px 40px 40px 50px;
+    grid-gap: 10px;
+
+    label {
+        grid-column: 1 / 2;
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+
+    input {
+        grid-column: 2 / 3;
+        width: 100%;
+        text-align: left;
+        border-radius: 1px;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+        font-size: 13px;
+        height: 36px;
+        padding: 1px 8px;
+        user-select: none;
+        outline: none;
+        vertical-align: middle;
+    }
+    input:focus {
+        border-style: solid;
+        border-color: rgb(0, 140, 255)!important;
+        border-width: 2px 1px 1px 1px;
+    }
+    .buttonCol { //.class for the button to submit the form
+        position: absolute;
+        bottom: 50px;
+        right: 340px;
+        margin-top: 40px;
+        user-select: none;
+        line-height: 100%;
+        height: 35px;
+        min-width: 120px;
+        padding: 0 12px;
+        box-shadow: none;
+        background-color: #4d90fe;
+        border: 1px solid  #3079ed;
+        color: #fff;
+        border-radius: 2px;
+        cursor: default;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        outline: 0;
+        white-space: nowrap;
+    }
+    .buttonCol:hover {
+        background-color: #2d7afa;
+    }
+    .autofocus {
+        border-color: rgb(87, 131, 235);
+    }
+}
+
+/* Creating the footer(that contains links) of the pages */
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    color: #5f6368;
+    font-size: $fontSize;
+    background-color: #ebe8e8;
+
+    .footerStart {
+        background-color: #ebe8e8;
+        flex-grow: 10;
+        padding: 10px 10px 10px 15px;
+    
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+            margin-left: 20px;
+            color: inherit;
+        }
+        a:hover {
+            color: #5f6368;
+            text-decoration: underline;
+        }
+    }
+
+    .footerEnd {
+        background-color: #ebe8e8;
+        flex-grow: 0.2;
+        padding: 10px 10px 10px 15px;
+        height: auto;
+    
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+            margin-left: 20px;
+            color: inherit;
+        }
+        a:hover {
+            color: #5f6368;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: $color;
+    color: #fff;
+    text-align: center;
+    padding: 10px 8px;
+    font-family: $fontStack;
+    font-size: 12px;
+    top: 300%;
+    left: 50%;
+    margin-left: -70px; 
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+

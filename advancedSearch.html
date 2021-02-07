@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="variables.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/6788fdcc85.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Advanced Search</title>
+    </head>
+
+    <body>
+        <!-- Creating top part of the page with Google Logo and "Google Search" link -->
+        <div class="topHeader">
+            <div class="cornerLogo">
+                <img src="googLogo.png" alt="Google Logo" class="imgCorner">
+            </div>
+            <a href="index.html" class="rightSearch links">Google Search</a>
+        </div>
+        <!-- Creating Header for the page -->
+        <div class="advanceHeader">
+            <label>Advanced Search</label>
+        </div>
+        
+        <div class="advanceLine"></div>
+
+        <div class="advanceFormCont"></div>
+            <div class="titleFind ">Find pages with...</div>
+            <div class="emptySpace"></div>
+                <!-- Creating form with input fields and submit button -->
+                <div class="formLeftMar">
+                <form id="grid" action="https://www.google.com/search" method="get">
+                    
+                    <label for="f0">all these words:</label>
+                    <input class="inputCol" id="f0" type="text" autocomplete="off" autofocus name="as_q">
+                    <label for="f1">this exact word or phrase:</label>
+                    <input class="inputCol" id="f1" type="text" autocomplete="off" name="as_epq">
+                    <label for="f2">any of these words:</label>
+                    <input class="inputCol" id="f2" type="text" autocomplete="off" name="as_oq"> 
+                    <label for="f3">none of these words:</label>
+                    <input class="inputCol" id="f3" type="text" autocomplete="off" name="as_eq">               
+                    <button class="buttonCol" type="submit" value="Advanced Search">Advanced Search</button>
+                </form>
+            </div>
+            <!-- Creating a footer of the page -->
+        <footer class="footer">
+            <span class="footerStart">
+                <a href >Help</a>
+                <a href>Privacy</a>
+                <a href>Terms</a>
+            </span>
+        </footer>
+    </body>
+</html>
+
+
+
+
